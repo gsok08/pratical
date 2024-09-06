@@ -1,0 +1,44 @@
+#include <iostream>
+
+void displaymoviemenu();
+void bookticket();
+void displayseat();
+
+int main() {
+	int input = 0;
+	displaymoviemenu();
+	do{
+	std::cin >> input;
+		switch (input) {
+		case 1:
+			bookticket();
+			break;
+		case 2:
+			displayseat();
+			break;
+		case 3:
+			break;
+		default:
+			std::cout << "\nplease re-enter : ";
+			std::cin >> input;
+			break;
+		}
+	} while (input != 3);;
+	return 0;
+}
+
+void displaymoviemenu() {
+	std::cout << "CINEMA MENU\n\n";
+	std::cout << "1.book a ticket\n";
+	std::cout << "2.display seat layout\n";
+	std::cout << "3.exit\n\n";
+	std::cout << "choose an option\n";
+}
+
+void bookticket() {
+	std::cout << "book ticket";
+}
+
+void  displayseat() {
+	std::cout << "seat";
+}
