@@ -1,0 +1,17 @@
+#include <iostream>
+
+double findtrianglearea(double, double);
+
+int main() {
+	double sum, a, b;
+	std::cout << "enter 2 num :  ";
+	std::cin >> a >> b;
+	sum = findtrianglearea(a, b);
+	std::cout << "result is " << sum;
+}
+
+double findtrianglearea(double a, double b) {
+	double area;
+	area = 0.5 * a * b;
+	return area;
+}
